@@ -1,8 +1,8 @@
 :root {
-  --primary-color: #2C6EBF; /* Celtic Blue */
+  --primary-color: #4c94ff; /* Celtic Blue */
   --secondary-color: #0E387C; /* Yale Blue */
-  --accent1-color: #7386D8; /* Glaucous */
-  --accent2-color: #0a4840; /* Brunswick Green */
+  --accent1-color: #cfd7ff; /* Glaucous */
+  --accent2-color: #003029; /* Brunswick Green */
   --heading-font: "Bebas Neue", sans-serif;
   --body-font: "Work Sans", sans-serif;
   --rounded: 1rem;
@@ -45,10 +45,7 @@ header img:hover {
 }
 
 header nav {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-
-  grid-area: 1 / 2;
+  display: flex;
   justify-content: space-between;
   align-items: center;
 }
@@ -99,7 +96,7 @@ h1 {
   text-align: center;
 
   opacity: 0.7;
-  background-color: var(--accent1-color);
+  background-color: var(--accent2-color);
   color: #fff;
 }
 
@@ -122,6 +119,7 @@ footer {
   text-shadow: none;
   box-shadow: var(--shadow);
   border-radius: var(--rounded);
+  color: var(--accent2-color)
 }
 
 footer nav {
