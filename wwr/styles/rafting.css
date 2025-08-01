@@ -20,7 +20,7 @@
 body {
   font-family: var(--body-font);
   color: var(--accent1-color);
-  text-shadow: 2px 2px 5px black;
+  /* text-shadow: 2px 2px 5px black; */
 }
 
 header {
@@ -395,7 +395,6 @@ footer img:hover {
 
 .company-information h2 {
   color: var(--accent2-color);
-  text-shadow: 5px 5px 10px var(--secondary-color);
 
   grid-column: 1;
   text-align: right;
