@@ -1,0 +1,351 @@
+:root {
+  --primary-color: #4c94ff; /* Celtic Blue */
+  --secondary-color: #0E387C; /* Yale Blue */
+  --accent1-color: #cfd7ff; /* Glaucous */
+  --accent2-color: #003029; /* Brunswick Green */
+  --heading-font: "Bebas Neue", sans-serif;
+  --body-font: "Work Sans", sans-serif;
+  --rounded: 1rem;
+  --shadow: 0 0 10px var(--secondary-color);
+  --subbox-shadow: 0 0 10px var(--accent1-color);
+  --img-shadow: 0 0 10px var(--accent2-color);
+  --animate: all ease-in-out .2s
+}
+
+* {
+  margin: 0;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--body-font);
+  color: var(--accent1-color);
+  text-shadow: 2px 2px 5px black;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+
+  border-radius: var(--rounded);
+  box-shadow: var(--shadow);
+}
+
+header img {
+  height: 120px;
+  border-radius: var(--rounded);
+
+  transition: var(--animate);
+}
+
+header img:hover {
+  transform: scale(1.1);
+  transition: var(--animate);
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav a {
+  margin: 5px;
+  text-shadow: none;
+  text-decoration: none;
+  text-align: center;
+  font-weight: 700;
+
+  outline: 2px solid var(--accent2-color);
+  border-radius: 5px;
+  
+  transition: var(--animate);
+}
+
+header nav a:hover {
+  text-decoration: underline;
+  font-size: larger;
+
+  box-shadow: var(--shadow);
+  background-color: rgba(240, 240, 240, 0.8);
+
+  transition: var(--animate);
+}
+
+header, main, footer {
+  width: 840px;
+  margin: 0 auto;
+}
+
+hr {
+  margin: 20px 50px 0;
+  border: 0;
+  border-top: 1px solid var(--accent1-color);
+}
+
+.contact-us-container {
+  width: auto;
+  padding: 10px;
+  margin: 10px auto;
+
+  background-color: var(--accent2-color);
+  box-shadow: var(--shadow);
+  border-radius: var(--rounded);
+
+  transition: var(--animate);
+}
+
+.contact-us-container:hover {
+  transform: scale(1.01);
+  transition: var(--animate);
+}
+
+.contact-us-container h1 {
+  text-align: center;
+}
+
+.employees {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  height: 250px;
+  padding: 10px;
+  margin: 10px 40px 0;
+  align-items: center;
+
+  color: var(--accent2-color);
+  background-color: var(--accent1-color);
+  box-shadow: var(--subbox-shadow);
+  border-radius: var(--rounded);
+
+  transition: var(--animate);
+}
+
+.employees:hover {
+  transform: scale(1.01);
+  transition: var(--animate);
+}
+
+.employees img {
+  height: 150px;
+  width: 150px;
+  margin: 0 40px;
+
+  border-radius: 50%;
+  box-shadow: var(--img-shadow);
+  transition: var(--animate);
+}
+
+.employees img:hover {
+  transform: scale(1.1);
+  transition: var(--animate);
+}
+
+.employees figcaption {
+  text-align: center;
+}
+
+.company-information-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  margin: 10px 40px;
+  padding: 10px;
+
+  color: var(--accent2-color);
+  background-color: var(--accent1-color);
+  box-shadow: var(--subbox-shadow);
+  border-radius: var(--rounded);
+
+  transition: var(--animate);
+}
+
+.company-information-container:hover {
+  transform: scale(1.01);
+  transition: var(--animate);
+}
+
+.company-information-container iframe {
+  grid-column: 1;
+  width:  300px;
+  height: 240px;
+  margin: 10px;
+
+  border-radius: var(--rounded);
+  box-shadow: var(--shadow);
+
+  transition: var(--animate);
+}
+
+.company-information-container iframe:hover {
+  transform: scale(1.02);
+  transition: var(--animate);
+}
+
+.company-information {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(3, 1fr);
+
+  margin: 10px 10px;
+  padding-right: 20px;
+  align-items: center;
+
+  box-shadow: var(--shadow);
+  border-radius: var(--rounded);
+
+  transition: var(--animate);
+}
+
+.company-information:hover {
+  transform: scale(1.02);
+  transition: var(--animate);
+}
+
+.company-information h2 {
+  grid-column: 1;
+  padding: 10px;
+  text-align: right;
+}
+
+.company-information p {
+  grid-column: 2;
+  text-align: left;
+  font-size: small;
+}
+
+.contact-form-container {
+  display: flex;
+  padding: 10px;
+  margin: 10px auto;
+  justify-content: center;
+
+  color: var(--accent2-color);
+  background-color: var(--accent2-color);
+  border-radius: var(--rounded);
+  box-shadow: var(--shadow);
+
+  transition: var(--animate);
+}
+
+.contact-form-container:hover {
+  transform: scale(1.01);
+  transition: var(--animate);
+}
+
+form {
+  width: auto;
+  padding: 20px;
+  margin: 10px;
+
+  background-color: var(--accent1-color);
+  border-radius: var(--rounded);
+  box-shadow: var(--subbox-shadow);
+
+  transition: var(--animate);
+}
+
+form:hover {
+  transform: scale(1.01);
+  transition: var(--animate);
+}
+
+fieldset {
+  border-radius: 10px;
+}
+
+.contact-information {
+  display: grid;
+  align-items: center;
+
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.contact-information label {
+  padding: 10px;
+  font-size: large;
+  text-align: right;
+}
+
+.contact-information input {
+  border-radius: 10px;
+}
+
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px auto;
+
+  border-radius: 10px;
+}
+
+.submit-container {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+
+  justify-content: center;
+  align-items: center;
+  place-items: center;
+}
+
+.submit-container label {
+  font-size: small;
+  grid-row: 1;
+}
+.submit-container input {
+  grid-row: 1;
+}
+
+.submit-container button {
+  grid-column: span 2;
+  grid-row: 2;
+  margin: 5px;
+
+  color: white;
+
+  background-color: var(--secondary-color);
+  border-radius: 10px;
+  border-color: var(--secondary-color);
+  box-shadow: 0 0 10px var(--accent2-color);
+
+  transition: var(--animate);
+}
+
+.submit-container button:hover {
+  background-color: var(--accent2-color);
+
+  border-color: var(--primary-color);
+  box-shadow: 0 5px 10px var(--secondary-color);
+
+  transform: scale(1.2);
+  transition: var(--animate);
+}
+
+footer {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr;
+
+  text-shadow: none;
+  box-shadow: var(--shadow);
+  border-radius: var(--rounded);
+  color: var(--accent2-color)
+}
+
+footer nav {
+  grid-area: 1 / 2;
+  justify-self: end;
+}
+
+footer img {
+  transition: var(--animate);
+}
+
+footer img:hover {
+  transform: scale(1.05);
+  transition: var(--animate);
+}
