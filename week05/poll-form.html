@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WDD 130 | HTML Form - User Poll</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cal+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/poll-form.css">
+</head>
+<body>
+  <header>
+    <h1>WDD 130 | HTML Form - User Poll | Robbie Yamashita</h1>
+  </header>
+  <main>
+    <form>
+      <fieldset class="contact-information">
+        <legend>Contact Information</legend>
+          <div class="form-item column1">
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" name="fullname">
+          </div>
+          <div class="form-item column2">
+            <label for="useremail">Email:</label>
+            <input type="email" id="useremail" name="useremail">
+          </div>
+      </fieldset>
+      <fieldset>
+        <legend>Questions</legend>
+        <div class="form-item column1">
+          <label for="browserprompt">What is your favorite internet browser?</label>
+          <select id="browser" name="browser">
+            <option disabled>Select a Browser</option>
+            <option>Chrome</option>
+            <option>Firefox</option>
+            <option>Opera</option>
+            <option>Safari</option>
+            <option>Microsoft Edge</option>
+            <option>Brave</option>
+            <option>Internet Explorer</option>
+            <option>Netscape Navigator</option>
+            <option>browsh</option>
+            <option>Lynx</option>
+            <option>Links</option>
+            <option>w3m</option>
+          </select>
+        </div>
+        <div class="form-item column1">
+          <label for="pet">Do you have a household pet?</label>
+          <input type="checkbox" id="pet" name="pet">
+        </div>
+        <div class="form-item">
+          <label for="feedback">List the places you have lived:</label>
+          <textarea id="feedback" name="feedback" rows="4" placeholder="Toronto Canada, New York USA, Montreal Canada, London England"></textarea>
+        </div>
+      </fieldset>
+      <button type="submit">Submit Poll</button>
+    </form>
+  </main>
+  <footer>©️2025 | HTML Form - User Poll Activity | Robbie Yamashita</footer>
+</body>
+</html>
