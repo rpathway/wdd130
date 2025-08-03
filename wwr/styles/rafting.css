@@ -513,3 +513,7 @@ fieldset {
   transform: scale(1.2);
   transition: var(--animate);
 }
+
+.wireframe-link {
+  display: inline;
+}
